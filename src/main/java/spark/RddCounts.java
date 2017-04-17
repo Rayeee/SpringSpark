@@ -11,7 +11,7 @@ import java.util.Arrays;
 /**
  * Created by zhugongyi on 2017/4/14.
  */
-public class Mainer {
+public class RddCounts {
 
     public static void main(String[] args) throws InterruptedException {
 
