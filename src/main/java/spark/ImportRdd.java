@@ -16,9 +16,15 @@ public class ImportRdd {
 
         JavaSparkContext sc = new JavaSparkContext(conf);
 
-        JavaRDD<Integer> rdd = sc.parallelize(Lists.newArrayList(1, 2, 3, 4, 5));
+        JavaRDD<Integer> rdd1 = sc.parallelize(Lists.newArrayList(1, 2, 3, 4, 5));
 
-        System.out.println(rdd.count());
+        rdd1.foreach(e -> System.out.println());
+
+        JavaRDD<Integer> rdd2 = sc.parallelize(Lists.newArrayList(6, 7));
+
+        JavaRDD<Integer> rdd3 = rdd1.union(rdd2);
+
+        System.out.println(rdd3.count());
     }
 
 }
