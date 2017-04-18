@@ -9,7 +9,7 @@ import org.apache.spark.api.java.JavaRDD;
 public class MapTest extends BaseTest {
 
     public static void main(String[] args) {
-        JavaRDD<Integer> result = intRDD.map(e -> e * e);
+        JavaRDD<Integer> result = intRDD_1.map(e -> e * e);
         System.out.println(StringUtils.join(result.collect(), ","));
     }
 

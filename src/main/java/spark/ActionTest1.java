@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by zhugongyi on 2017/4/17.
  */
-public class ActionTest extends BaseTest {
+public class ActionTest1 extends BaseTest {
 
     public static void main(String... args) {
         JavaRDD<String> errorRDD = accessRDD.filter(e -> e.contains("ERROR"));
